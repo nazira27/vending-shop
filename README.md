@@ -1,5 +1,6 @@
-# Air indexer
-Air indexer
+# Vending Shop
+
+Vending Shop
 
 `npm install` - install depencies
 
