@@ -1,0 +1,19 @@
+$font: '~@/assets/fonts/';
+@font-face {
+	font-family: 'Maison';
+	font-style: normal;
+	font-weight: normal;
+	src: url('#{$font}Maison.otf') format('opentype');
+}
+@font-face {
+	font-family: 'TTCommons-Black';
+	font-style: normal;
+	font-weight: normal;
+	src: url('#{$font}TTCommons-Black.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'TT Commons';
+	font-style: normal;
+	font-weight: normal;
+	src: url('#{$font}TTCommons-Regular.ttf') format('truetype');
+}
