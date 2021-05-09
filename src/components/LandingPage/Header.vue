@@ -23,10 +23,20 @@
           <a @click="handleClick" class="nav" v-scroll-to="'#banner'" href="#"
             >Home</a
           >
-          <a class="nav" @click="handleClick" v-scroll-to="'#about'" href="#"
-            >About Us</a
+          <a
+            @click="handleClick"
+            class="nav"
+            v-scroll-to="'#categories'"
+            href="#"
+            >Categories</a
           >
-          <router-link :to="{ name: 'login' }">Login in</router-link>
+          <a @click="handleClick" class="nav" v-scroll-to="'#shops'" href="#"
+            >Shops</a
+          >
+          <a class="nav" @click="handleClick" v-scroll-to="'#faq'" href="#"
+            >FAQ</a
+          >
+          <router-link to="/">Login in</router-link>
         </li>
       </v-toolbar-items>
     </v-app-bar>

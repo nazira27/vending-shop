@@ -1,46 +1,172 @@
 <template>
-  <div style="margin-top: 100px">
+  <div style="padding-top: 50px; background-color: #f7f7f7">
     <v-container>
-      <h2 style="text-align: center">Categories</h2>
+      <h1 style="text-align: center" class="mb-6 display-2">Categories</h1>
       <v-row>
-        <v-col sm="12" md="4">
-          <div class="service-card service-ghape">
-            <h3>02</h3>
-            <h4>wordpress customize</h4>
-            <p>
-              Also have dynamic website development experience with wordpress
-              based solutions, wordpress plugins.
-            </p>
+        <v-col sm="12" md="3">
+          <div class="category-item">
+            <a
+              href="#"
+              class="category-image"
+              style="background-image: url('https://files.glotr.uz/category/000/000/004/2020-01-06-15-47-32-337434-7de771cd3b34c7700779842ab5021f99.jpg?_=ozauc') "
+            ></a>
+            <div class="category-title">
+              <a>Baliqlar</a>
+            </div>
           </div>
         </v-col>
-        <v-col sm="12" md="4">
-          <div class="service-card service-ghape">
-            <h3>02</h3>
-            <h4>wordpress customize</h4>
-            <p>
-              Also have dynamic website development experience with wordpress
-              based solutions, wordpress plugins.
-            </p>
+        <v-col sm="12" md="3">
+          <div class="category-item">
+            <a
+              href="#"
+              class="category-image"
+              style="background-image: url('https://files.glotr.uz/category/000/000/004/2020-01-06-15-47-32-337434-7de771cd3b34c7700779842ab5021f99.jpg?_=ozauc') "
+            ></a>
+            <div class="category-title">
+              <a>Baliqlar</a>
+            </div>
           </div>
         </v-col>
-        <v-col sm="12" md="4">
-          <div class="service-card service-ghape">
-            <h3>02</h3>
-            <h4>wordpress customize</h4>
-            <p>
-              Also have dynamic website development experience with wordpress
-              based solutions, wordpress plugins.
-            </p>
+        <v-col sm="12" md="3">
+          <div class="category-item">
+            <a
+              href="#"
+              class="category-image"
+              style="background-image: url('https://files.glotr.uz/category/000/000/004/2020-01-06-15-47-32-337434-7de771cd3b34c7700779842ab5021f99.jpg?_=ozauc') "
+            ></a>
+            <div class="category-title">
+              <a>Baliqlar</a>
+            </div>
+          </div>
+        </v-col>
+        <v-col sm="12" md="3">
+          <div class="category-item">
+            <a
+              href="#"
+              class="category-image"
+              style="background-image: url('https://files.glotr.uz/category/000/000/004/2020-01-06-15-47-32-337434-7de771cd3b34c7700779842ab5021f99.jpg?_=ozauc') "
+            ></a>
+            <div class="category-title">
+              <a>Baliqlar</a>
+            </div>
+          </div>
+        </v-col>
+        <v-col sm="12" md="3">
+          <div class="category-item">
+            <a
+              href="#"
+              class="category-image"
+              style="background-image: url('https://files.glotr.uz/category/000/000/004/2020-01-06-15-47-32-337434-7de771cd3b34c7700779842ab5021f99.jpg?_=ozauc') "
+            ></a>
+            <div class="category-title">
+              <a>Baliqlar</a>
+            </div>
+          </div>
+        </v-col>
+        <v-col sm="12" md="3">
+          <div class="category-item">
+            <a
+              href="#"
+              class="category-image"
+              style="background-image: url('https://files.glotr.uz/category/000/000/004/2020-01-06-15-47-32-337434-7de771cd3b34c7700779842ab5021f99.jpg?_=ozauc') "
+            ></a>
+            <div class="category-title">
+              <a>Baliqlar</a>
+            </div>
           </div>
         </v-col>
       </v-row>
+      <!--      <v-row>-->
+      <!--        <v-col sm="12" md="4">-->
+      <!--          <div class="service-card service-ghape">-->
+      <!--            <h3>02</h3>-->
+      <!--            <h4>wordpress customize</h4>-->
+      <!--            <p>-->
+      <!--              Also have dynamic website development experience with wordpress-->
+      <!--              based solutions, wordpress plugins.-->
+      <!--            </p>-->
+      <!--          </div>-->
+      <!--        </v-col>-->
+      <!--        <v-col sm="12" md="4">-->
+      <!--          <div class="service-card service-ghape">-->
+      <!--            <h3>02</h3>-->
+      <!--            <h4>wordpress customize</h4>-->
+      <!--            <p>-->
+      <!--              Also have dynamic website development experience with wordpress-->
+      <!--              based solutions, wordpress plugins.-->
+      <!--            </p>-->
+      <!--          </div>-->
+      <!--        </v-col>-->
+      <!--        <v-col sm="12" md="4">-->
+      <!--          <div class="service-card service-ghape">-->
+      <!--            <h3>02</h3>-->
+      <!--            <h4>wordpress customize</h4>-->
+      <!--            <p>-->
+      <!--              Also have dynamic website development experience with wordpress-->
+      <!--              based solutions, wordpress plugins.-->
+      <!--            </p>-->
+      <!--          </div>-->
+      <!--        </v-col>-->
+      <!--      </v-row>-->
     </v-container>
   </div>
 </template>
 <script>
-export default {};
+// import axios from 'axios'
+export default {
+  methods: {
+    loadData() {
+      const baseURI = "https://vending-shop.herokuapp.com/api/category";
+      // axios.get('vending-shop.herokuapp.com/api/category').then(response => {
+      this.$http
+        .get(baseURI, {
+          headers: {
+            Authorization:
+              "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTYxOTc2NDA3MX0.pkTdrxZId9TAUDRaYIf6hbInL8W9hdzSs79p6pFIZZoWh-sj0VSy5TZjiIqSi08QkIDW3xFRZ61NnY3gtpkwQQ",
+          },
+        })
+        .then((response) => {
+          console.log(response, "djsjdfhs");
+        });
+    },
+  },
+  mounted() {
+    this.loadData();
+  },
+};
 </script>
 <style scoped>
+.category-item:hover {
+  box-shadow: 0px 0px 30px 0px rgb(5 8 9 / 20%);
+}
+.category-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px 0px rgb(5 8 9 / 5%);
+  padding: 10px 10px 0 10px;
+  transition: 0.2s ease-in-out;
+}
+.category-title {
+  padding: 15px 0;
+  line-height: 1.1;
+}
+.category-title a {
+  text-align: center;
+  font-family: "FuturaMediumC", sans-serif;
+  font-size: 16px;
+  display: inline-block;
+  width: 100%;
+  padding: 0 10px;
+}
+.category-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  background-size: contain;
+  height: 250px;
+}
+
 .service-ghape {
   margin-top: -80px;
 }

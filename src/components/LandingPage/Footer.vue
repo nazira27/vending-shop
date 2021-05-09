@@ -3,12 +3,11 @@
     <v-card flat tile class="card white--text text-center">
       <v-row>
         <v-col class="text-center" sm="12" md="12" lg="12">
-          <span>VendorShop</span>
+          <span>VendingShop</span>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Shops</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Contact</a></li>
           </ul>

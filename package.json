@@ -12,6 +12,7 @@
   "dependencies": {
     "add": "^2.0.6",
     "apexcharts": "^3.16.0",
+    "axios": "^0.21.1",
     "chart.js": "^2.9.3",
     "cookies": "^0.8.0",
     "core-js": "^3.6.4",

@@ -12,13 +12,6 @@
         transition="fade-transition"
         src="~@/assets/banners/banner-1.jpg"
       >
-        <v-container>
-          <v-row align="center" justify="center">
-            <div>
-              <button class="btn">Register</button>
-            </div>
-          </v-row>
-        </v-container>
       </v-carousel-item>
       <v-carousel-item
         reverse-transition="fade-transition"
